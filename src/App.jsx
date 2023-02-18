@@ -1,17 +1,19 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import Login from "./pages/Login"
-import Register from "./pages/Register"
+import { GlobalStyle } from "./globalStyles"
+import Auth from "./pages/Auth"
 
 const router = createBrowserRouter([
   {
-    path: '/login',
-    element: <Login/>
-  }, {
-    path: '/register',
-    element: <Register/>
-  }
+    path: '/auth',
+    element: <Auth/>
+  },
 ])
 
 export default function App() {
-  return <RouterProvider router={router}/>
+  return (
+    <>
+      <GlobalStyle/>
+      <RouterProvider router={router}/>
+    </>
+  )
 }
