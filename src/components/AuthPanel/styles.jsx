@@ -21,13 +21,19 @@ export const AuthBox = styled.div`
 
         a {
             padding: 1rem 0;
-            border-bottom: 2px solid #ff4147;
-            color: #ff4147;
+            border-bottom: 2px solid #363739;
+            color: #ffffff;
     
             font-family: 'Inter', sans-serif;
             font-size: 1rem;
             text-align: center;
             text-decoration: none;
+
+            &:hover {
+                border-bottom: 2px solid #ff4147;
+                color: #ff4147;
+                transition: 0.5s;
+            }
         }
     } 
 `

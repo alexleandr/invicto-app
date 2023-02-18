@@ -1,7 +1,10 @@
-import { AuthBox } from "./styles"
+import { AuthBox, SelectedForm } from "./styles"
 import icon from "../../assets/img/invicto-icon.png"
+import { useParams } from "react-router-dom"
 
 export default function AuthPanel() {
+    const { idForm } = useParams()
+
     return (
         <AuthBox>
             <img src={icon} alt="Ícone do inVicto."/>
