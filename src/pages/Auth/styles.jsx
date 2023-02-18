@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 import background from "../../assets/img/dempsey-and-firpo.png"
 
 export const MainContainer = styled.main`
@@ -45,5 +45,8 @@ export const WelcomeContainer = styled.section`
 `
 
 export const AuthContainer = styled.section`
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 `
