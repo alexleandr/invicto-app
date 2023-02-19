@@ -1,20 +1,7 @@
-import { AuthBox, Form } from "./styles"
+import { AuthBox } from "./styles"
 import icon from "../../assets/img/invicto-icon.png"
 import { useParams } from "react-router-dom"
-
-function LoginForm() {
-    return (
-        <Form>
-            <label htmlFor="email">Email</label>
-            <input type="text" id="email"/>
-
-            <label htmlFor="password">Senha</label>
-            <input type="password" id="password"/>
-
-            <button type="submit">Entrar</button>
-        </Form>
-    )
-}
+import LoginForm from "./LoginForm"
 
 export default function AuthPanel() {
     const { idForm } = useParams()
