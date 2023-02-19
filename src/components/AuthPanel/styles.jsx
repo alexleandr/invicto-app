@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AuthBox = styled.div`
-    width: 55%;
+    width: 60%;
 
     display: flex;
     flex-direction: column;
@@ -11,7 +11,6 @@ export const AuthBox = styled.div`
     img {
         height: 40px;
     }
-
 
     div {
         width: 100%;
@@ -36,40 +35,4 @@ export const AuthBox = styled.div`
             }
         }
     } 
-`
-
-export const Form = styled.form`
-    width: 100%;
-    padding-top: 1rem;
-    color: #ffffff;
-
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-
-    display: flex;
-    flex-direction: column;
-
-    input {
-        background-color: #121212;
-        height: 2.5rem;
-        margin: 0.5rem 0;
-        border: none;
-        border-radius: 5px;
-    }
-
-    button {
-        background-color: #ff4147;
-        width: 120px;
-        height: 3rem;
-        margin-top: 1rem;
-        border: none;
-        border-radius: 32px;
-        color: #ffffff;
-
-        font-family: 'Inter', sans-serif;
-        font-size: 1rem;
-        font-weight: 500;
-
-        align-self: center;
-    }
 `
