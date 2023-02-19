@@ -1,8 +1,8 @@
-import { Form } from "./styles";
+import { SignInForm } from "./styles";
 
 export default function LoginForm() {
     return (
-        <Form>
+        <SignInForm>
             <label htmlFor="email">Email</label>
             <input type="text" id="email"/>
 
@@ -10,6 +10,6 @@ export default function LoginForm() {
             <input type="password" id="password"/>
 
             <button type="submit">Entrar</button>
-        </Form>
+        </SignInForm>
     )
 }

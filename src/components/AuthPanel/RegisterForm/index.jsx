@@ -1,6 +1,8 @@
+import { SignUpForm } from "./styles";
+
 export default function RegisterForm() {
     return (
-        <form>
+        <SignUpForm>
             <label htmlFor="fullname">Nome Completo</label>
             <input type="text" id="fullname"/>
 
@@ -11,6 +13,6 @@ export default function RegisterForm() {
             <input type="date" id="birth-date"/>
 
             <button type="submit">Criar conta</button>
-        </form>
+        </SignUpForm>
     )
 }
