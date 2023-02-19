@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Form = styled.form`
+export const SignInForm = styled.form`
     width: 100%;
     padding-top: 1rem;
     color: #ffffff;
@@ -41,11 +41,10 @@ export const Form = styled.form`
         transition: background-color 5000s ease-in-out 0s;
     }
 
-
     button {
         background-color: #ff4147;
         width: 120px;
-        height: 3rem;
+        height: 3.5rem;
         margin-top: 2rem;
         border: none;
         border-radius: 32px;
