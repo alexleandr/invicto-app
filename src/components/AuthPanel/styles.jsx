@@ -17,7 +17,7 @@ export const AuthBox = styled.div`
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
+    
         a {
             padding: 1rem 0;
             border-bottom: 2px solid #363739;
@@ -27,12 +27,16 @@ export const AuthBox = styled.div`
             font-size: 1rem;
             text-align: center;
             text-decoration: none;
-
+    
             &:hover {
                 border-bottom: 2px solid #ff4147;
                 color: #ff4147;
                 transition: 0.5s;
-            }
         }
-    } 
+    }
+`
+
+export const SelectedItem = styled.a`
+    border-bottom: 2px solid #ff4147 !important;
+    color: #ff4147 !important;
 `
