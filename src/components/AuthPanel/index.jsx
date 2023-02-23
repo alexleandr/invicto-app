@@ -1,28 +1,32 @@
-import { Navigate, useParams } from "react-router-dom"
+import * as Tabs from "@radix-ui/react-tabs"
 
 import { LoginForm } from "./LoginForm"
 import { RegisterForm } from "./RegisterForm"
-import { AuthPanelContainer, SelectedItem } from "./styles"
+import { AuthPanelContainer} from "./styles"
 
 import icon from "../../assets/img/invicto-icon.png"
 
 export function AuthPanel() {
-    const { idForm } = useParams()
-
-    let form
-    if (idForm === 'login') form = <LoginForm />
-    else if (idForm === 'cadastro') form = <RegisterForm />
-    else return <Navigate to="/auth/login" />
-
-    let navbar
-    if (idForm === 'login') navbar = <div><SelectedItem href="/auth/login">Acessar conta</SelectedItem><a href="/auth/cadastro">Criar conta</a></div>
-    else if (idForm === 'cadastro') navbar = <div><a href="/auth/login">Acessar conta</a><SelectedItem href="/auth/cadastro">Criar conta</SelectedItem></div>
-
     return (
         <AuthPanelContainer>
             <img src={icon} alt="Ícone do inVicto." />
-            {navbar}
-            {form}
+
+            <Tabs.Root className="tabs-root" defaultValue="tab1">
+                <Tabs.List className="tabs-list" aria-label="Gerenciamento de contas">
+                    <Tabs.Trigger className="tabs-trigger" value="tab1">
+                        Acessar conta
+                    </Tabs.Trigger>
+                    <Tabs.Trigger className="tabs-trigger" value="tab2">
+                        Criar conta
+                    </Tabs.Trigger>
+                </Tabs.List>
+                <Tabs.Content className="tabs-content" value="tab1">
+                    <LoginForm />
+                </Tabs.Content>
+                <Tabs.Content className="tabs-content" value="tab2">
+                    <RegisterForm />
+                </Tabs.Content>
+            </Tabs.Root>
         </AuthPanelContainer>
     )
 }
