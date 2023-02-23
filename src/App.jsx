@@ -5,15 +5,15 @@ import Auth from "./pages/Auth"
 const router = createBrowserRouter([
   {
     path: '/auth/:idForm',
-    element: <Auth/>
+    element: <Auth />
   },
 ])
 
 export default function App() {
   return (
     <>
-      <GlobalStyle/>
-      <RouterProvider router={router}/>
+      <GlobalStyle />
+      <RouterProvider router={router} />
     </>
   )
 }
