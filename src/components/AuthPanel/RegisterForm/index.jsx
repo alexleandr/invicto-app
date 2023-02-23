@@ -1,6 +1,6 @@
-import { SignUpForm } from "./styles";
+import { SignUpForm } from "./styles"
 
-export default function RegisterForm() {
+export function RegisterForm() {
     return (
         <SignUpForm>
             <label htmlFor="fullname">Nome Completo</label>
