@@ -1,4 +1,5 @@
 import styled from "styled-components"
+
 import background from "../../assets/img/dempsey-and-firpo.png"
 
 export const MainContainer = styled.main`

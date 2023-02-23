@@ -1,6 +1,7 @@
 import { AuthContainer, MainContainer, WelcomeContainer } from "./styles"
-import logo from "../../assets/img/invicto-logo.png"
 import { AuthPanel } from "../../components/AuthPanel/index"
+
+import logo from "../../assets/img/invicto-logo.png"
 
 export function Auth() {
     return (
