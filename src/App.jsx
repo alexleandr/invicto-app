@@ -5,7 +5,7 @@ import { Auth } from "./pages/Auth"
 
 const router = createBrowserRouter([
   {
-    path: '/auth/:idForm',
+    path: '/',
     element: <Auth />
   },
 ])
