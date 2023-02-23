@@ -8,9 +8,9 @@ export default function AuthPanel() {
     const { idForm } = useParams()
 
     let form
-    if (idForm === 'login') form = <LoginForm/>
-    else if (idForm === 'cadastro') form = <RegisterForm/>
-    else return <Navigate to="/auth/login"/>
+    if (idForm === 'login') form = <LoginForm />
+    else if (idForm === 'cadastro') form = <RegisterForm />
+    else return <Navigate to="/auth/login" />
 
     let navbar
     if (idForm === 'login') navbar = <div><SelectedItem href="/auth/login">Acessar conta</SelectedItem><a href="/auth/cadastro">Criar conta</a></div>
@@ -18,7 +18,7 @@ export default function AuthPanel() {
 
     return (
         <AuthBox>
-            <img src={icon} alt="Ícone do inVicto."/>
+            <img src={icon} alt="Ícone do inVicto." />
             {navbar}
             {form}
         </AuthBox>
