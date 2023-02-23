@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import { SignInForm } from "../LoginForm/styles"
+import { LoginFormContainer } from "../LoginForm/styles"
 
-export const SignUpForm = styled(SignInForm)`
+export const RegisterFormContainer = styled(LoginFormContainer)`
     input {
         color-scheme: dark;
     }

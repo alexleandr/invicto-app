@@ -1,4 +1,4 @@
-import { AuthBox, SelectedItem } from "./styles"
+import { AuthPanelContainer, SelectedItem } from "./styles"
 import icon from "../../assets/img/invicto-icon.png"
 import { Navigate, useParams } from "react-router-dom"
 import { LoginForm } from "./LoginForm"
@@ -17,10 +17,10 @@ export function AuthPanel() {
     else if (idForm === 'cadastro') navbar = <div><a href="/auth/login">Acessar conta</a><SelectedItem href="/auth/cadastro">Criar conta</SelectedItem></div>
 
     return (
-        <AuthBox>
+        <AuthPanelContainer>
             <img src={icon} alt="Ícone do inVicto." />
             {navbar}
             {form}
-        </AuthBox>
+        </AuthPanelContainer>
     )
 }

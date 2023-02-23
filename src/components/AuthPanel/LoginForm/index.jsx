@@ -1,8 +1,8 @@
-import { SignInForm } from "./styles"
+import { LoginFormContainer } from "./styles"
 
 export function LoginForm() {
     return (
-        <SignInForm>
+        <LoginFormContainer>
             <label htmlFor="email">Email</label>
             <input type="text" id="email" />
 
@@ -10,6 +10,6 @@ export function LoginForm() {
             <input type="password" id="password" />
 
             <button type="submit">Entrar</button>
-        </SignInForm>
+        </LoginFormContainer>
     )
 }

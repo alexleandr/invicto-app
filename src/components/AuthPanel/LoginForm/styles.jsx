@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const SignInForm = styled.form`
+export const LoginFormContainer = styled.form`
     width: 100%;
     padding-top: 1rem;
     color: #ffffff;
