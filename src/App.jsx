@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+
 import { GlobalStyle } from "./globalStyles"
 import { Auth } from "./pages/Auth"
 
