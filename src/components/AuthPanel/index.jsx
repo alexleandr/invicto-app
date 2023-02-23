@@ -1,8 +1,6 @@
-import * as Tabs from "@radix-ui/react-tabs"
-
 import { LoginForm } from "./LoginForm"
 import { RegisterForm } from "./RegisterForm"
-import { AuthPanelContainer} from "./styles"
+import { AuthPanelContainer, TabsContent, TabsList, TabsRoot, TabsTrigger} from "./styles"
 
 import icon from "../../assets/img/invicto-icon.png"
 
@@ -11,22 +9,23 @@ export function AuthPanel() {
         <AuthPanelContainer>
             <img src={icon} alt="Ícone do inVicto." />
 
-            <Tabs.Root className="tabs-root" defaultValue="tab1">
-                <Tabs.List className="tabs-list" aria-label="Gerenciamento de contas">
-                    <Tabs.Trigger className="tabs-trigger" value="tab1">
+            <TabsRoot defaultValue="tab1">
+                <TabsList aria-label="Gerenciamento de contas">
+                    <TabsTrigger value="tab1">
                         Acessar conta
-                    </Tabs.Trigger>
-                    <Tabs.Trigger className="tabs-trigger" value="tab2">
+                    </TabsTrigger>
+                    <TabsTrigger value="tab2">
                         Criar conta
-                    </Tabs.Trigger>
-                </Tabs.List>
-                <Tabs.Content className="tabs-content" value="tab1">
+                    </TabsTrigger>
+                </TabsList>
+
+                <TabsContent value="tab1">
                     <LoginForm />
-                </Tabs.Content>
-                <Tabs.Content className="tabs-content" value="tab2">
+                </TabsContent>
+                <TabsContent value="tab2">
                     <RegisterForm />
-                </Tabs.Content>
-            </Tabs.Root>
+                </TabsContent>
+            </TabsRoot>
         </AuthPanelContainer>
     )
 }
