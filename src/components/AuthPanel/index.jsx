@@ -1,10 +1,10 @@
 import { AuthBox, SelectedItem } from "./styles"
 import icon from "../../assets/img/invicto-icon.png"
 import { Navigate, useParams } from "react-router-dom"
-import LoginForm from "./LoginForm"
-import RegisterForm from "./RegisterForm"
+import { LoginForm } from "./LoginForm"
+import { RegisterForm } from "./RegisterForm"
 
-export default function AuthPanel() {
+export function AuthPanel() {
     const { idForm } = useParams()
 
     let form

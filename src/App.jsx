@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { GlobalStyle } from "./globalStyles"
-import Auth from "./pages/Auth"
+import { Auth } from "./pages/Auth"
 
 const router = createBrowserRouter([
   {
@@ -9,7 +9,7 @@ const router = createBrowserRouter([
   },
 ])
 
-export default function App() {
+export function App() {
   return (
     <>
       <GlobalStyle />

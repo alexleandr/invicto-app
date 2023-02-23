@@ -1,6 +1,6 @@
-import { SignInForm } from "./styles";
+import { SignInForm } from "./styles"
 
-export default function LoginForm() {
+export function LoginForm() {
     return (
         <SignInForm>
             <label htmlFor="email">Email</label>

@@ -1,8 +1,8 @@
 import { AuthContainer, MainContainer, WelcomeContainer } from "./styles"
 import logo from "../../assets/img/invicto-logo.png"
-import AuthPanel from "../../components/AuthPanel/index"
+import { AuthPanel } from "../../components/AuthPanel/index"
 
-export default function Auth() {
+export function Auth() {
     return (
         <MainContainer>
             <WelcomeContainer>
