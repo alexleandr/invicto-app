@@ -1,27 +1,22 @@
 import styled from "styled-components"
 import * as Tabs from "@radix-ui/react-tabs"
 
-export const AuthPanelContainer = styled.div`
+export const AuthPanelContainer = styled(Tabs.Root)`
     width: 60%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 1rem;
 
     img {
         height: 40px;
+        margin-bottom: 1rem;
     }
 `
 
-export const TabsRoot = styled(Tabs.Root)`
+export const TabsList = styled(Tabs.List)`
     width: 100%;
 
-    display: flex;
-    flex-direction: column;
-`
-
-export const TabsList = styled(Tabs.List)`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 `
@@ -59,5 +54,6 @@ export const TabsTrigger = styled(Tabs.Trigger)`
 `
 
 export const TabsContent = styled(Tabs.Content)`
+    width: 100%;
     outline: none;
 `
