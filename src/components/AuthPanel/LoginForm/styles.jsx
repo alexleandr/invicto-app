@@ -43,11 +43,11 @@ export const LoginFormContainer = styled.form`
 
     button {
         background-color: #ff4147;
-        width: 120px;
+        width: 100%;
         height: 3.5rem;
-        margin-top: 2rem;
+        margin-top: 0.5rem;
         border: none;
-        border-radius: 32px;
+        border-radius: 5px;
         color: #ffffff;
 
         font-family: 'Inter', sans-serif;
