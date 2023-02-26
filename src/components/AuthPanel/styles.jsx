@@ -12,6 +12,10 @@ export const AuthPanelContainer = styled(Tabs.Root)`
         height: 40px;
         margin-bottom: 1rem;
     }
+
+    @media(max-width: 480px) {
+        width: 85%;
+    }
 `
 
 export const TabsList = styled(Tabs.List)`
@@ -50,6 +54,10 @@ export const TabsTrigger = styled(Tabs.Trigger)`
         border-bottom: 2px solid #ff4147;
         color: #ff4147;
         outline: none;
+    }
+
+    @media(max-width: 375px) {
+        font-size: 14px;
     }
 `
 

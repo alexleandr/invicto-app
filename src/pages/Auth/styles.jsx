@@ -8,6 +8,10 @@ export const MainContainer = styled.main`
 
 	display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @media(max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 `
 
 export const WelcomeContainer = styled.section`
@@ -43,11 +47,21 @@ export const WelcomeContainer = styled.section`
             font-weight: 600;
         }
     }
+
+    @media(max-width: 1024px) {
+        p {
+            font-size: 20px;
+        }
+    }
+
+    @media(max-width: 768px) {
+        display: none;
+    }
 `
 
 export const AuthContainer = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 `
